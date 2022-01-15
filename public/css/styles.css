@@ -1,0 +1,90 @@
+body{
+    background-color: #191d28;
+    font-family: 'Oswald', sans-serif;
+}
+.hello{
+    color: aliceblue;
+}
+
+.logo{
+width: 20%;
+height: 20%;
+margin: 0.5rem 0rem 0rem 0.5rem;
+}
+select{
+    width: 70px;
+    height: 40px;
+    background-color: #2f3241;
+    color: #eef7fa;
+    border-radius: 0.5rem;
+    border: none;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(https://img.icons8.com/material-outlined/344/double-down.png) 96% / 15% no-repeat #2f3241;
+}
+select:active{
+    background-color: #545b63;
+}
+.drop{
+    margin: -3rem 0rem 0rem 35rem;
+}
+.buy{
+    width: 70px;
+    height: 40px;
+    background-color: #2f3241;
+    color: #eef7fa;
+    border-radius: 0.5rem;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    margin: -3.6rem 0rem 0rem 13rem;
+}
+.crypto{
+    color: #808189;
+    margin-left: 37rem;
+}
+.price{
+    color: whitesmoke;
+    font-size: 2.5rem;
+    margin-left: 35rem;
+    margin-top: -3rem;
+}
+.average{
+    color: #808189;
+    font-size: 0.8rem;
+    margin-left: 34rem;
+    margin-top: -3rem;
+}
+.telegram{
+    width: 23%;
+    height: 23%;
+    margin: -3.4rem 0rem 0rem 40rem;
+}
+.table{
+    color: #eef7fa;
+    margin: 4rem 0rem 0rem 7rem;
+}
+table{
+    width: 80rem;
+    height: 8rem;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+ font-size: 1.5rem;
+}
+
+thead{
+color: #63646d;
+
+}
+.row{
+
+    text-align: center;
+}
+tbody{
+    background-color: #2f3241;
+    border-radius: 2rem;
+}

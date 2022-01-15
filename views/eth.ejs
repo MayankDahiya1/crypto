@@ -1,0 +1,51 @@
+<%- include("partials/heading") %> 
+<body>
+    <div><a href="/homepage"><img class="logo" src="/images/logo.png"></a></div>
+    <div class="drop">
+        <select >
+            <option>INR</option>
+           
+        </select>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <select onchange="location = this.options[this.selectedIndex].value;">
+            <option value="/eth">ETH</option>
+            <option value="/">WRX</option>
+            <option value="/btc">BTC</option>
+            <option value="/matic">MATIC</option>
+        </select>
+<a style="text-decoration: none;" target="_blank" href="https://wazirx.com/invite/sp7pvbt6?utm_source=finstreet&utm_medium=affiliate&utm_campaign=regnow-btn"><div class="buy"><p>BUY</p></div></a>
+<a target="_blank" href="https://hodlinfo.com/connect/telegram"><img class="telegram"src="/images/telegram.png"></a>   
+</div>
+
+<div class="crypto"><h1>Best Price to Trade</h1></div>
+<div class="price"><h1>$<%= data1.ethinr.last %> </h1></div>
+<div class="average"><h2>Average <%= data1.ethinr.name %>  net price including commission</h2></div>
+<div class="table">
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Last</th>
+                <th>Buy / Sell Price</th>
+                <th>Volume</th>
+                <th>Base_unit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(let i=0 ; i<crypto.length;i++) {%> 
+            <tr>
+                <td class="row"><%- i %> </td>
+                <td class="row"><%= crypto[i].name %> </td>
+                <td class="row">$<%= crypto[i].last %> </td>
+                <td class="row">$<%= crypto[i].buy %> / $<%= crypto[i].sell %></td>
+                <td class="row"><%= crypto[i].volume %></td>
+                <td class="row"><%= crypto[i].base_unit %></td>
+            </tr>
+        <% } %> 
+        </tbody>
+    </table>
+</div>
+<%- include("partials/footer") %> 
